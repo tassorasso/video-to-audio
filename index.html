@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/@ffmpeg/ffmpeg@0.10.1/dist/ffmpeg.min.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="controls">
+<div class="main-bar">
+<input type="file" id="f">
+<select id="m">
+<option value="v2a">video to audio</option>
+<option value="a2v">audio to video</option>
+</select>
+<select id="e">
+<option value="mp3">mp3</option>
+<option value="wav">wav</option>
+<option value="mp4">mp4</option>
+<option value="mkv">mkv</option>
+</select>
+<button id="b" onclick="x()">convert</button>
+</div>
+<div class="view-bar" id="s">ready</div>
+<div class="adv-grid" id="g" style="display:none">
+<a id="d">download</a>
+</div>
+</div>
+</body>
+</html>

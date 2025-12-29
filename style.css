@@ -1,0 +1,74 @@
+body {
+    font-family: sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+.controls {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.main-bar, .view-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+details {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #eee;
+    border: 1px solid #ddd;
+}
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+.adv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+.adv-grid div {
+    display: flex;
+    flex-direction: column;
+}
+input, select {
+    padding: 5px;
+    margin-top: 2px;
+}
+button {
+    padding: 5px 15px;
+    cursor: pointer;
+    background: #ddd;
+    border: 1px solid #999;
+}
+button:hover { background: #ccc; }
+.canvas-container {
+    overflow-x: auto;
+    background: #222;
+    position: relative;
+    border: 1px solid #333;
+    display: inline-block; 
+}
+canvas {
+    display: block;
+    cursor: crosshair;
+}
+#tooltip {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.85);
+    color: #0f0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 12px;
+    pointer-events: none;
+    display: none;
+    z-index: 100;
+    border: 1px solid #0f0;
+}
